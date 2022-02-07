@@ -8,7 +8,7 @@ package com.creational.factory.transport;
  */
 public class SeaLogisticsFactory extends LogisticsFactory {
     @Override
-    Transport createTransport() {
+    public Transport createTransport() {
         return new Ship();
     }
 

@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class RoadLogisticsFactory extends LogisticsFactory {
     @Override
-    Transport createTransport() {
+    public Transport createTransport() {
         System.out.println("Select Choice");
         System.out.println("1. Truck");
         System.out.println("2. Train");

@@ -17,9 +17,12 @@ package com.creational.factory.polygon;
  * It can also return existing objects from a cache, an object pool, or another source.
  */
 public class PolygonFactory {
+    // this method could also be a static method
     public Polygon getPolygon(int dimension) {
         if(dimension == 3) return new Triangle();
         if(dimension == 4) return new Rectangle();
         return new Pentagon();
     }
+
+    // any other business logic
 }

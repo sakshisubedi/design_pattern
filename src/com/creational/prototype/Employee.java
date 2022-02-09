@@ -3,6 +3,15 @@ package com.creational.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Cloneable - The Prototype interface declares the cloning methods. In most cases, it’s a single clone method.
+ * 
+ * Employee - The Concrete Prototype class implements the cloning method. 
+   In addition to copying the original object’s data to the clone, 
+   this method may also handle some edge cases of the cloning process related to cloning linked objects, 
+   untangling recursive dependencies, etc.
+ */
+
 public class Employee implements Cloneable {
     private List<String> empList;
 

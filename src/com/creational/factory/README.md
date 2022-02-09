@@ -17,6 +17,9 @@ Factory Method is a **creational design pattern** that provides an interface for
  - When a class doesn't know what sub-classes will be required to create.
  - When a class wants that its sub-classes specify the objects to be created.
  - When the parent classes choose the creation of objects to its sub-classes.
+ - When the implementation of an interface or an abstract class is expected to change frequently.
+ - When the current implementation cannot comfortably accommodate new change.
+ - When the initialization process is relatively simple, and the constructor only requires a handful of parameters.
  - *This design pattern is commonly utilized in JDK, for example: getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle use factory method design pattern.*
 
 ## Pros

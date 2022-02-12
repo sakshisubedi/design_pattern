@@ -1,5 +1,6 @@
 # Factory
-Factory Method is a **creational design pattern** that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. *(Deals with object creation without providing a specific class type for the object. Factory is responsible to give the object of the type specified at run time.)*
+ - Factory Method is a **creational design pattern** that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. *(Deals with object creation without providing a specific class type for the object. Factory is responsible to give the object of the type specified at run time.)*
+ - It is one of the best ways to create an object where object creation logic is hidden to the client.
 
 ## Intent
  - Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
@@ -38,7 +39,8 @@ Factory Method is a **creational design pattern** that provides an interface for
  - The different types of objects created must have the same parent class.
 
 ## Useful Links
- - [Stackoverflow example](https://stackoverflow.com/questions/2386125/real-world-examples-of-factory-method-pattern#:~:text=5%20Answers&text=A%20class%20implementing%20factory%20design,like%20SQL%20Server%20and%20Oracle.)
+ - [Stackoverflow example 1](https://stackoverflow.com/questions/2386125/real-world-examples-of-factory-method-pattern#:~:text=5%20Answers&text=A%20class%20implementing%20factory%20design,like%20SQL%20Server%20and%20Oracle.)
+ - [Stackoverflow example 2](https://stackoverflow.com/questions/69849/factory-pattern-when-to-use-factory-methods)
  - [Real life example 1](https://codeburst.io/design-patterns-learning-abstract-factory-method-through-real-life-examples-9d0cc99ef0e8)
  - [Real life example 2](https://stacktraceguru.com/factory-design-pattern/)
  - [Real life example 3](http://www.mukeshkumar.net/articles/designpattern/factory-design-pattern-real-world-example)

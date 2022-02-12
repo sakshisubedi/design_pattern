@@ -10,6 +10,10 @@ Prototype is a creational design pattern that lets you copy existing objects wit
  - Not all objects can be copied by going through all the fields of the original object and copy their values over to the new object because some of the object’s fields may be private and not visible from outside of the object itself.
  - Object creation becomes dependent on the class.
 
+## Types
+- Shallow Clone
+- Deep Clone
+
 ## When to use:
  - Use the Prototype pattern when your code shouldn’t depend on the concrete classes of objects that you need to copy.
  - Use the pattern when you want to reduce the number of subclasses that only differ in the way they initialize their respective objects. Somebody could have created these subclasses to be able to create objects with a specific configuration.

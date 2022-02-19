@@ -12,7 +12,7 @@ public class NuttyDecorator extends IcecreamDecorator{
 
     @Override
     public String makeIcecream() {
-        return specialIcecream.makeIcecream() + addNuts();
+        return super.makeIcecream() + addNuts();
     }
 
     private String addNuts() {

@@ -12,6 +12,6 @@ public class MushroomTopping extends ToppingDecorator{
 
     @Override
     public int getPrice() {
-        return this.toppingPizza.getPrice() + 15;
+        return super.toppingPizza.getPrice() + 15;
     }
 }

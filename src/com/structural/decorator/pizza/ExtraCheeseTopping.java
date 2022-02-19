@@ -12,6 +12,6 @@ public class ExtraCheeseTopping extends ToppingDecorator{
 
     @Override
     public int getPrice() {
-        return this.toppingPizza.getPrice() + 20;
+        return super.toppingPizza.getPrice() + 20;
     }
 }

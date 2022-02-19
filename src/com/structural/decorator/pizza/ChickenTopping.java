@@ -13,6 +13,6 @@ public class ChickenTopping extends ToppingDecorator{
 
     @Override
     public int getPrice() {
-        return this.toppingPizza.getPrice() + 25;
+        return super.toppingPizza.getPrice() + 25;
     }
 }

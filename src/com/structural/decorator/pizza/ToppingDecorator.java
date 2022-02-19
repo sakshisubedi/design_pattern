@@ -6,6 +6,7 @@ package com.structural.decorator.pizza;
  * The base decorator delegates all operations to the wrapped object.
  */
 public abstract class ToppingDecorator implements Pizza{
+    // wrappee
     Pizza toppingPizza;
 
     public ToppingDecorator(Pizza toppingPizza) {

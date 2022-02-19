@@ -6,6 +6,7 @@ package com.structural.decorator.icecream;
  * The base decorator delegates all operations to the wrapped object.
  */
 public class IcecreamDecorator implements Icecream{
+    // wrappee
     public Icecream specialIcecream;
 
     public IcecreamDecorator(Icecream specialIcecream) {

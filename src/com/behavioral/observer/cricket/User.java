@@ -8,11 +8,11 @@ package com.behavioral.observer.cricket;
  * For this reason, publishers often pass some context data as arguments of the notification(update) method.
  * The publisher can pass itself as an argument, letting subscriber fetch any required data directly.
  */
-public class User1 implements Observer {
+public class User implements Observer {
 
     String name;
 
-    public User1(String name) {
+    public User(String name) {
         this.name = name;
     }
 

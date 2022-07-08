@@ -24,6 +24,7 @@
   - [Decorator](./src/com/structural/decorator)
   - [Facade](./src/com/structural/facade)
   - [Composite](./src/com/structural/composite)
+  - [Flyweight](./src/com/structural/flyweight)
 
 ### Behavioral Patterns
 - In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.

@@ -14,7 +14,7 @@
 - When client expects different representations for the object that's constructed.
 
 ## What is construction and representation of an object?
-*Using burger example.*
+*[Using burger example](https://stacktraceguru.com/builder-pattern/)*
 - **Representation**: This step consists of how our product looks at the end when it is ready. In this step we combine the already constructed parts. For instance first there is a bread, then patty on top it followed by some veggies, then some sauces and at the end finished off with final layer of bread.
 - **Construction**: whereas, this step means how the parts of the products are actually made. This may include multiple steps.
 For example baking a bread, making burger patty, making different sauces, cutting of vegetables etc.
@@ -24,6 +24,7 @@ Builder pattern separates these 2 steps so that we can create different type of 
 ## Director
 - The director class defines the order in which to execute the building steps, while the builder provides the implementation for those steps.
 - The construction is controlled by a director object that only needs to know the type of object it is to create.
+- Can be think as a Facade Pattern.
 
 ## When to use
 - Use the Builder pattern to get rid of a "telescopic constructor".
@@ -39,6 +40,7 @@ Builder pattern separates these 2 steps so that we can create different type of 
     Now what if only firstName and lastName are mandatory and the rest 3 fields are optional. Problem !! We need more constructors. This problem is called the telescoping constructors problem.
 - Use the Builder pattern when you want your code to be able to create different representations of some product *(for example:- stone and wooden houses)*.
 - Use the Builder to construct Composite trees or other complex objects.
+- The constructor of the User class is also declared private so that only the Builder assigned to this class can access it.
 
 ## Pros
 - The parameters to the constructor are reduced and are provided in highly readable method calls.
@@ -74,4 +76,5 @@ In JDK there are many places where Builder design pattern is used. Some of these
 - [Example 1](https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/)
 - [Example 2](https://blogs.oracle.com/javamagazine/post/exploring-joshua-blochs-builder-design-pattern-in-java)
 - [Example 3](https://stacktraceguru.com/builder-pattern/)
+- [Example 4](https://www.adevguide.com/builder-design-pattern-java/)
 - [Refer Sunil's example](https://github.com/sy117/design-patterns/blob/master/builder/src/main/java/demo/Student.java)

@@ -10,8 +10,10 @@ public class FactoryPattern {
         Transport transport;
         if(mode.equals("sea")) {
             transport = new SeaLogisticsFactory().createTransport();
-        } else {
+        } else if(mode.equals("road")) {
             transport = new RoadLogisticsFactory().createTransport();
+        } else {
+            transport = new SeaLogisticsFactory().createTransport();
         }
         transport.deliver();
 //        new SeaLogisticsFactory().help();

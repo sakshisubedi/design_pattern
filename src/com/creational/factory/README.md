@@ -1,6 +1,7 @@
 # Factory
  - Factory Method is a **creational design pattern** that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. *(Deals with object creation without providing a specific class type for the object. Factory is responsible to give the object of the type specified at run time.)*
  - It is one of the best ways to create an object where object creation logic is hidden to the client.
+ - Scope --> Classes
 
 ## Intent
  - Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
@@ -44,3 +45,4 @@
  - [Real life example 1](https://codeburst.io/design-patterns-learning-abstract-factory-method-through-real-life-examples-9d0cc99ef0e8)
  - [Real life example 2](https://stacktraceguru.com/factory-design-pattern/)
  - [Real life example 3](http://www.mukeshkumar.net/articles/designpattern/factory-design-pattern-real-world-example)
+ - [Baeldung](https://www.baeldung.com/java-factory-pattern)

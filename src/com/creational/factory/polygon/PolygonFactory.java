@@ -17,6 +17,9 @@ package com.creational.factory.polygon;
  * It can also return existing objects from a cache, an object pool, or another source.
  */
 public class PolygonFactory {
+    /*
+        In this case factory method has a concrete implementation to create objects of the Product
+     */
     // this method could also be a static method
     public Polygon getPolygon(int dimension) {
         if(dimension == 3) return new Triangle();

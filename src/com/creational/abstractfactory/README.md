@@ -12,11 +12,25 @@
 
 ## Does abstract factory violate Open/Closed principle?
 ```
-- As per this principle, the class should be open for extension and closed for modification.
-- As per our example if we want to setup a new store, we will create new class/factory but will need to modify the switch case in our FactoryProvider. 
-- Some might argue that this is violation of the principle but we are not modifying existing code we are only adding new case. So it is a minor violation.
-- Our aim with design principles should be to minimize the number of changes required for extension.
+- As per this principle, the class should be open for
+ extension and closed for modification.
+- As per our example if we want to setup a new store,
+ we will create new class/factory but will need to 
+ modify the switch case in our FactoryProvider. 
+- Some might argue that this is violation of the 
+principle but we are not modifying existing code we are
+ only adding new case. So it is a minor violation.
+- Our aim with design principles should be to minimize
+ the number of changes required for extension.
 ```
+
+### Factory Method vs. Abstract Factory
+- The Factory Method uses inheritance as a design tool.
+- Meanwhile, Abstract Factory uses delegation. 
+- The first relies on a derived class to implement,
+whereas the base provides expected behavior. Additionally, it is over-method and not over a class.
+- On the other hand, Abstract Factory is applied over a class. 
+- Both follow OCP and SRP, producing a loosely coupled code and more flexibility for future changes in our codebase. The creation code is in one place.
 
 ## Usage
 - An example of the Abstract Factory design pattern in the JDK is the newInstance() of javax.xml.parsers.DocumentBuilderFactory class.
@@ -58,6 +72,7 @@
 
 ## Useful Links
 - [Baeldung blog](https://www.baeldung.com/java-abstract-factory-pattern)
+- [Factory Vs Abstract Factory Pattern](https://www.baeldung.com/java-factory-pattern)
 - [Example 1](https://www.adevguide.com/abstract-factory-design-pattern-java/)
 - [Example 2](https://www.geeksforgeeks.org/abstract-factory-pattern/)
 - [Stackoverflow example](https://stackoverflow.com/questions/2280170/why-do-we-need-abstract-factory-design-pattern#:~:text=A%20real%20life%20example%20for,Database%20and%20an%20XML%20file)

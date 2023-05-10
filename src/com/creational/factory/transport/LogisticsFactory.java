@@ -17,8 +17,12 @@ package com.creational.factory.transport;
  * It can also return existing objects from a cache, an object pool, or another source.
  */
 public abstract class LogisticsFactory {
+    /*
+    *   Here, the factory method is abstract. It forces all of its subclasses to implement their own versions of the method.
+    * */
     abstract Transport createTransport();
 
+    // any other business logic
     void help() {
         System.out.println("Call xxx");
     }

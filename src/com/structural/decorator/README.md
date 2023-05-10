@@ -4,7 +4,8 @@
 - Extending new services/features/behavior from the base class is not good design practice. Because there will be an increase of subclasses and not all subclasses have dependency on other subclasses. Eg *(from refactoring guru)*. You tried to address the notification problem by creating special subclasses which combined several notification methods within one class. However, it quickly became apparent that this approach would bloat the code immensely by making several combinations, not only the library code but the client code as well. 
 
 ## Problem
-- Inheritance is static.
+- Inheritance is static. You can’t alter the behavior of an existing object at runtime. You can only replace the whole object with another one that’s created from a different subclass.
+- Inheritance is one form of extension, but not necessarily the best way to achieve flexibility in our designs.
 - Subclasses can have just one parent class.
 - Also, adding services in base class as fields violates SOLID principles i.e. open-closed principle (open for extension and closed for modification), since in future additional services might be added or removed or updated. It is also compile-time binding (Inheritance is static).  
 - One of the ways to overcome these caveats is by using Aggregation or Composition. (Adding functionality to an object dynamically). You want to add behavior or state to individual objects at run-time. Inheritance is not feasible because it is static and applies to an entire class.
@@ -32,11 +33,18 @@
  - It allows us to dynamically add functionality and behavior to an object without affecting the behavior of other existing objects within the same class.
  - Single Responsibility Principle. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes.
  - It enhances the extensibility of the object, because changes are made by coding new classes.
+ - Follows Open Closed Principle.
 
 ## Cons
  - It’s hard to remove a specific wrapper(decorator) from the wrappers stack.
  - It’s hard to implement a decorator in such a way that its behavior doesn’t depend on the order in the decorators stack.
  - The initial configuration code of layers might look pretty ugly.
+
+## Questions
+1. Can decorators know about the other decorations in the chain? Say, I wanted my getDecription() method to
+print “Whip, Double Mocha” instead of  “Mocha, Whip, Mocha”? That would  require that my outermost decorator know all the decorators it is wrapping.
+
+Decorators are meant to add behavior to the object they wrap. When you need to peek at multiple layers into the decorator chain, you are starting to push the decorator beyond its true intent. Nevertheless, such things are possible. Imagine a CondimentPrettyPrint decorator that parses the final decription and can print “Mocha, Whip, Mocha” as “Whip, Double Mocha.” Note that getDecription() could return an ArrayList of descriptions to make this easier.
 
 ## Useful Links
 - [Baeldung blog](https://www.baeldung.com/java-decorator-pattern)

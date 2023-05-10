@@ -90,13 +90,15 @@ public static SingletonSynchronizedBlock getInstance(){
  - The singleton object is initialized only when it’s requested for the first time  (not for eager/early initialization).
 
 ## Cons
- - Violates the Single Responsibility Principle. The pattern solves two problems at the time.
+ - Violates the Single Responsibility Principle. The pattern solves two problems at the time. One managing its instance and, it is also responsible for whatever its main role is in the application. 
  - It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.
  - The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.
  - The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other.
+ - Difficult to subclass the Singleton code as it will require the private constructor of Singleton class to be public.
 
  ## Useful Links
  - [baeldung blog](https://www.baeldung.com/java-singleton)
+ - [Example](https://www.adevguide.com/singleton-creational-design-pattern-java/)
  - [GeeksForGeeks](https://www.geeksforgeeks.org/singleton-design-pattern/)
  - [Additional Implementations](https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples)
  - [educative.io](https://www.educative.io/courses/software-design-patterns-best-practices/B8nMkqBWONo)

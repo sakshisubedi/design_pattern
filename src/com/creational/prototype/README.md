@@ -34,6 +34,7 @@ Prototype is a creational design pattern that lets you copy existing objects wit
  - The pattern is useful to remove a bunch of boilerplate code, when the configuration required would be onerous.
 
 ## Cons
+ - Making a copy of an object can sometimes be complicated.
  - Cloning complex objects that have circular references might be very tricky.
  - It also hides concrete product classes from the client.
  - Overkill for a project that uses very few objects and/or does not have an underlying emphasis on the extension of prototype chains. 

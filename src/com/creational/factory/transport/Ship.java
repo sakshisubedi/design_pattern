@@ -6,6 +6,6 @@ package com.creational.factory.transport;
 public class Ship implements Transport{
     @Override
     public void deliver() {
-        System.out.println("Delivered cargo by sea");
+        System.out.println("Delivered cargo by sea - Ship");
     }
 }

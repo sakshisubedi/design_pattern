@@ -6,5 +6,5 @@ package com.behavioral.observer.cricket;
  * The method may have several parameters that let the publisher pass some event details along with the update.
  */
 public interface Observer {
-    void update(int runs, int wickets, float overs);
+    void update(float temperature, float humidity, float pressure);
 }

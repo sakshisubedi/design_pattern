@@ -5,23 +5,22 @@ package com.behavioral.observer.cricket;
  */
 public class ObserverPattern {
     public static void main(String[] args) {
-        CricketData cricketData = new CricketData();
-        User user1 = new User("abc");
-        User user2 = new User("xyz");
+        WeatherData weatherData = new WeatherData();
+        Observer currentConditionsDisplay  = new CurrentConditionsDisplay();
+        Observer forecastDisplay  = new ForecastDisplay();
+        Observer statisticsDisplay  = new StatisticsDisplay();
+        Observer thirdPartyDisplay  = new ThirdPartyDisplay();
 
-        cricketData.scoreChanged(4, 0, 0.1f);
+        weatherData.setMeasurements(55, 20, 50);
 
-        cricketData.subscribe(user1);
+        weatherData.subscribe(currentConditionsDisplay);
+        weatherData.subscribe(forecastDisplay);
+        weatherData.setMeasurements(65, 20, 50);
 
-        cricketData.scoreChanged(6, 0, 0.2f);
-
-        cricketData.subscribe(user2);
-
-        cricketData.scoreChanged(7, 0, 0.3f);
-
-        cricketData.unsubscribe(user1);
-        
-        cricketData.scoreChanged(7, 1, 0.4f);
+        weatherData.unsubscribe(forecastDisplay);
+        weatherData.subscribe(statisticsDisplay);
+        weatherData.subscribe(thirdPartyDisplay);
+        weatherData.setMeasurements(100, 50, 30);
 
     }
 }

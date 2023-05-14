@@ -8,21 +8,19 @@ package com.behavioral.observer.cricket;
  * For this reason, publishers often pass some context data as arguments of the notification(update) method.
  * The publisher can pass itself as an argument, letting subscriber fetch any required data directly.
  */
-public class User implements Observer {
-
-    String name;
-
-    public User(String name) {
-        this.name = name;
+public class ForecastDisplay implements Observer, DisplayElement{
+    private float temperature, humidity, pressure;
+    @Override
+    public void display() {
+        // Display weather forecast based on the barometer
+        System.out.println("Forecast: " + temperature + "F degrees and " + humidity + "% humidity " + pressure + "Pa pressure");
     }
 
     @Override
-    public void update(int runs, int wickets, float overs) {
-        System.out.println("Hello " + this.name);
-        System.out.println("The score has been updated");
-        System.out.println("The updated score:");
-        System.out.println("Runs - " + runs);
-        System.out.println("Wickets - " + wickets);
-        System.out.println("overs - " + overs + "\n");
+    public void update(float temperature, float humidity, float pressure) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.pressure = pressure;
+        display();
     }
 }

@@ -1,4 +1,4 @@
-package com.structural.bridge;
+package com.structural.bridge.payment;
 
 /**
  * The Implementation declares the interface that’s common for all concrete implementations. 

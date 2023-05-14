@@ -1,10 +1,13 @@
 # Facade
 - Facade is a **structural design pattern** that provides a simplified interface to a library, a framework, or any other complex set of classes.
-- A single class that represents an entire subsystem.
+- It provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher level interface that makes the subsystem easier to use. 
+- A facade not only simplifies an interface, it decouples a client from a subsystem of components. Provides a simple interface to hide details of the complex system
+- A single class that represents an entire subsystem. This pattern allows to create any number of facades for a given subsystem.
 - Instead of making your code work with dozens of the framework classes directly, you create a facade class which encapsulates that functionality and hides it from the rest of the code. This structure also helps you to minimize the effort of upgrading to future versions of the framework or replacing it with another one. The only thing you’d need to change in your app would be the implementation of the facade’s methods.
-- Practically, every Abstract Factory is a type of Facade.
+- Practically, **every Abstract Factory is a type of Facade**.
 - Subsystem may be dependent with one another. In such case, facade can act as a coordinator and decouple the dependencies between the subsystems.
-- Provides a simple interface to hide details of the complex system
+- A facade is free to add its own "smarts" in addition to making use of the subsystem.
+- Facades **don't encapsulate** the subsystem classes; they merely provide a simplifies interface to their functionality. The subsystem classes still remain available for direct use by client that need to use more specific interfaces. This is a nice property of facade pattern: it provides a simplified interface while still exposing the full functionality of the system to those who may need it.
 - Used to provide an abstraction layer over complex classes or subsystems to expose only what is required for the client.
 - Reduces the efforts required to make changes if the library changes and the code is highly coupled with each other
 
@@ -39,8 +42,8 @@ Imagine that you must make your code work with a broad set of objects that belon
                     Client2 -----------> Facade2 -----------------|
 
 3. Abstraction layer over a complex subsystem
-    - In microservices architecture, there are multiple services interacting with each other. However, client
-        need not interact with individual services.
+    - In microservices architecture, there are multiple services interacting with each other. However, client need not interact with individual services.
+    - There might be several external or internal APIs and we may want to simplify the interface to access the APIs.
     - A facade can help provide a single entry point to access different services
 
     Ex: API Gateway
@@ -61,11 +64,18 @@ Imagine that you must make your code work with a broad set of objects that belon
                                                                            \/
                                                                     Redeem points service
     ```
-
+4. We want to provide a simple interface to a complex subsystem. 
+5. There are many dependencies between clients and the implementation classes.
 - Use the Facade pattern when you need to have a limited but straightforward interface to a complex subsystem.
 - Use the Facade when you want to structure a subsystem into layers.
 - The facade pattern is appropriate when you have a complex system that you want to expose to clients in a simplified way, or you want to make an external communication layer over an existing system which is incompatible with the system. Facade deals with interfaces, not implementation. Its purpose is to hide internal complexity behind a single interface that appears simple on the outside.
 - When several dependencies exist between clients and the implementation classes of an abstraction.
+
+## Use cases
+[Explanation](https://levelup.gitconnected.com/3-main-use-cases-of-the-facade-design-pattern-in-enterprise-applications-aa9b290adac6)
+- Decoupling Application Code From the Library.
+- Reusing Legacy Code in New Application.
+- Fixing Interface Segregation Principle Violation.
 
 ## Example
 - In Java, the interface JDBC can be called a facade because, we as users or clients create connection using the “java.sql.Connection” interface, the implementation of which we are not concerned about. The implementation is left to the vendor of driver.
@@ -84,6 +94,11 @@ Imagine that you must make your code work with a broad set of objects that belon
 
 ## Facade Vs Mediator Design Pattern
 Mediator design pattern may look very similar to facade design pattern in terms of abstraction. Mediator abstracts the functionality of the subsystems in this way it is similar to the facade pattern. In the implementation of mediator pattern, subsystem or peers components are aware of the mediator and that interact with it. **In the case of facade pattern, subsystems are not aware of the existence of facade. Only facade talks to the subsystems.**
+
+## Facade Vs Adapter Design Pattern
+- Facades and Adapters may wrap multiple classes, but a facade's intent is to provide a simplified interface to a subsystem, while an adapter's is to convert the interface to something different so that it matches what a client is expecting.
+- Adapter Pattern changes the interface of one or more classes into one interface that a client is expecting. Likewise, a Facade may provide a simplified interface to a single class with a very complex interface.
+- An adapter wraps an object to change its interface, a decorator wraps an object to add new behaviors and responsibilities, and a facade wraps a set of objects to simplify.
 
 ## Useful Links
 - [Different use cases](https://levelup.gitconnected.com/3-main-use-cases-of-the-facade-design-pattern-in-enterprise-applications-aa9b290adac6)

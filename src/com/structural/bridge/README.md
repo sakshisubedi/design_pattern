@@ -1,10 +1,13 @@
 # Bridge
 - Bridge is a **structural design pattern** that lets you split a large class or a set of closely related classes (divides business logic) into two separate hierarchies—**abstraction and implementation**—which can be developed independently of each other.
-- Separates an object's interface from its implementation.
+- The implementation between the **abstraction** and **interface** is referred to as the **bridge**;
+- Use the Bridge Pattern to vary not only your
+  implementations, but also your abstractions.
+- Bridge separates an object's interface from its implementation. Hence, decouple an abstraction from its implementation so that it allows the two hierarchies to vary independently.
 - One of these hierarchies (often called the Abstraction) will get a reference to an object of the second hierarchy (Implementation). The abstraction will be able to delegate some (sometimes, most) of its calls to the implementations object. Since all implementations will have a common interface, they’d be interchangeable inside the abstraction.
 - Abstraction (also called interface) is a high-level control layer for some entity. This layer isn’t supposed to do any real work on its own. It should delegate the work to the implementation layer (also called platform). When talking about real applications, the abstraction can be represented by a graphical user interface (GUI), and the implementation could be the underlying operating system code (API) which the GUI layer calls in response to user interactions.
-- The official definition for the Bridge design pattern introduced by Gang of Four (GoF) is to decouple an abstraction from its implementation so that the two can vary independently.
-- It follows the principle which says “prefer composition over inheritance”.
+- It follows the principle which says **prefer composition over inheritance**.
+- Abstraction is all about the overall idea what needs to be done whereas Implementation is all about how to achieve it in various circumstances.
 
 ## Intent
 - Decouple an abstraction from its implementation so that the two can vary independently.
@@ -12,14 +15,29 @@
 - Beyond encapsulation, to insulation.
 
 ## When to use:
+- Useful in graphic and windowing systems that need to
+  run over multiple platforms.
+- Useful any time you need to vary an interface and an
+  implementation in different ways.
 - Use the Bridge pattern when you want to divide and organize a monolithic class that has several variants of some functionality (for example, if the class can work with various database servers).
 - Use the pattern when you need to extend a class in several orthogonal (independent) dimensions.
 - Use the Bridge if you need to be able to switch implementations at runtime.
 - When you don't want a permanent binding between the functional abstraction and its implementation.
 - When both the functional abstraction and its implementation need to extended using sub-classes.
 - Any Change in implementation should have no impact on abstraction.
+- When we want a parent abstract class to define the set of basic rules, and the concrete classes to add additional rules. 
+- When we have an abstract class that has a reference to the objects, and it has abstract methods that will be defined in each of the concrete classes.
+- Your program requires run-time binding of the implementation. 
+- You want to share an implementation among multiple objects.
+- When you have to develop a module which can have some inherited properties or behaviors along with some dynamic.
 
 ## Pros
+- Decouples an implementation so that it is not bound
+  permanently to an interface. 
+- Abstraction and implementation can be extended
+  independently. 
+- Changes to the concrete abstraction classes don’t
+  affect the client.
 - You can create platform-independent classes and apps. Provides a good solution for cross-platform development.
 - The client code works with high-level abstractions. It isn’t exposed to the platform details.
 - Open/Closed Principle. You can introduce new abstractions and implementations independently from each other.
@@ -27,9 +45,12 @@
 - It enables the separation of implementation from the interface.
 - It improves the extensibility.
 - It allows the hiding of implementation details from the client.
+- Decoupling the object’s interface and makes it independent. 
+- Improved Extensibility (you can extend (subclass) the abstraction and implementation hierarchies independently).
+- Provides a good solution for cross-platform development
 
 ## Cons
-- You might make the code more complicated by applying the pattern to a highly cohesive class.
+- You might make the code more complicated by applying the pattern to a highly cohesive class. Hence, increases complexity.
 
 ## Does it sound similar to Adapter pattern ?
 - Bridge pattern decouples an abstraction and implementation elements of a class by creating two separate class hierarchies to change independently, whereas an Adapter pattern helps two incompatible classes to work together.
@@ -86,6 +107,9 @@
     ```
 
   At runtime, our default gateway is Googlepay but when Googlepay is not available we set the gateway as Razorpay Gateway
+
+## Relations with other Design patterns :
+Bridge, State, Strategy(and to some extent Adapter) have very similar structures(based out of “Composition”) which delegates job to other objects . However, they all are meant to solve different set of problems.
 
 ## Useful Links
 - [Baeldung blog](https://www.baeldung.com/java-bridge-pattern)

@@ -4,6 +4,11 @@ import java.util.Random;
 
 /**
  * The Client calculates or stores the extrinsic state of flyweights. From the client’s perspective, a flyweight is a template object which can be configured at runtime by passing some contextual data into parameters of its methods.
+ *
+ * The Flyweight pattern is merely an optimization.
+ * Before applying it, make sure your program does have the RAM consumption problem related to having a massive number
+ * of similar objects in memory at the same time.
+ * Make sure that this problem can’t be solved in any other meaningful way.
  */
 public class FlyweightPattern {
     private static Random random = new Random();

@@ -1,4 +1,4 @@
-package com.structural.bridge;
+package com.structural.bridge.payment;
 
 /**
  * Refined Abstractions provide variants of control logic. Like their parent, they work with different implementations via the general implementation interface.

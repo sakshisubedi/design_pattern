@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * The Flyweight Factory manages a pool of existing flyweights. With the factory, clients don’t create flyweights directly. Instead, they call the factory, passing it bits of the intrinsic state of the desired flyweight. The factory looks over previously created flyweights and either returns an existing one that matches search criteria or creates a new one if nothing is found.
+ * The Flyweight Factory manages a pool of existing flyweights.
+ * With the factory, clients don’t create flyweights directly.
+ * Instead, they call the factory, passing it bits of the intrinsic state of the desired flyweight.
+ * The factory looks over previously created flyweights and either returns an existing one that matches search criteria
+ * or creates a new one if nothing is found.
  */
 
 // Class used to get a player using HashMap (Returns an existing player if a player of given type exists.)

@@ -63,3 +63,12 @@
 - [Sourcemaking](https://sourcemaking.com/design_patterns)
 - [Baeldung](https://www.baeldung.com/design-patterns-series)
 - [Git link](https://github.com/sy117/design-patterns)
+
+### Prefer Composition over Inheritance
+- Advantages
+  - Better design
+  - Scale easily
+  - Follows SOLID principles better than Inheritance
+  - Does not need to change many classes. In inheritance, change in base class requires changes in concrete classes.
+  - Change behavior at Runtime.
+  - Go with compostion first and then inheritance.

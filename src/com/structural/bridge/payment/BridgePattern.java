@@ -1,4 +1,4 @@
-package com.structural.bridge;
+package com.structural.bridge.payment;
 
 /**
  * Usually, the Client is only interested in working with the abstraction. 

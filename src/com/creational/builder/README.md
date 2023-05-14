@@ -2,6 +2,9 @@
 - Builder is a **creational design pattern** that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 - The process of constructing an object should be generic so that it can be used to create different representations of the same object.
 - The only big difference between the builder pattern and the abstract factory pattern is that builder provides us more control over the object creation process and that’s it.
+- We can use setters instead of builder but there are 2 problems associated with it:
+  - Objects become mutable by using the set methods. In case of builder it is with the builder class and not with the associated concrete (Product) class.
+  - In build method of the builder class, we can have additional check on the required properties but in setters it is not available. (In Student Builder class, we have validateStudentObject() check)
 
 ## Intent
 - Separate the construction of a complex object from its representation so that the same construction process can create different representations.
@@ -43,6 +46,12 @@ Builder pattern separates these 2 steps so that we can create different type of 
 - The constructor of the User class is also declared private so that only the Builder assigned to this class can access it.
 
 ## Pros
+- Less need for exposing setters in the (Product) class.
+- Helps with immutable classes.
+- Encapsulate the way a complex object is constructed.
+- Allows objects to be constructed in a multi-step and varying process(as opposed to one-step factories). You can construct objects step-by-step, defer construction steps or run steps recursively.
+- Hides the internal representation of the product from the client.
+- Product implementations can be swapped in and out because the client only sees an abstract interface.
 - The parameters to the constructor are reduced and are provided in highly readable method calls.
 - Builder design pattern also helps in minimizing the number of parameters in the constructor and thus there is no need to pass in null for optional parameters to the constructor.
 - Object is always instantiated in a complete state.
@@ -50,12 +59,14 @@ Builder pattern separates these 2 steps so that we can create different type of 
 - It provides clear separation between the construction and representation of an object.
 - It provides better control over construction process.
 - It supports to change the internal representation of objects.
-- You can construct objects step-by-step, defer construction steps or run steps recursively.
 - You can reuse the same construction code when building various representations of products.
 - Single Responsibility Principle. You can isolate complex construction code from the business logic of the product.
 - Unlike other creational patterns, Builder can construct unrelated products, which don't have the common interface.
 
 ## Cons
+- Class instance returned is immutable.
+- Uses inner static class.
+- Constructing objects requires more domain knowledge of the client than when using a Factory.
 - The overall complexity of the code increases since the pattern requires creating multiple new classes.
 - The number of lines of code increases at least to double in builder pattern, but the effort pays off in terms of design flexibility and much more readable code.
 - Requires creating a separate ConcreteBuilder for each different type of Product.

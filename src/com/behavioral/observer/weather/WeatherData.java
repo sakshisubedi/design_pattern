@@ -1,4 +1,4 @@
-package com.behavioral.observer.cricket;
+package com.behavioral.observer.weather;
 
 import java.util.ArrayList;
 import java.util.List;

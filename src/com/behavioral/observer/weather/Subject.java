@@ -1,4 +1,4 @@
-package com.behavioral.observer.cricket;
+package com.behavioral.observer.weather;
 
 /**
  * The Publisher/Subject/Observable issues events of interest to other objects.

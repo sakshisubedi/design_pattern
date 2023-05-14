@@ -1,4 +1,4 @@
-package com.behavioral.observer.cricket;
+package com.behavioral.observer.weather;
 
 /*
 * DisplayElement interfaces allows to system to be expandable.

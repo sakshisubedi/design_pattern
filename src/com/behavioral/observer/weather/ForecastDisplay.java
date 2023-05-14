@@ -1,4 +1,4 @@
-package com.behavioral.observer.cricket;
+package com.behavioral.observer.weather;
 
 /**
  * Concrete Subscribers/Observer perform some actions in response to notifications issued by the publisher.

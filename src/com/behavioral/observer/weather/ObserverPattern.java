@@ -1,4 +1,4 @@
-package com.behavioral.observer.cricket;
+package com.behavioral.observer.weather;
 
 /**
  * The Client creates publisher and subscriber objects separately and then registers subscribers for publisher updates.

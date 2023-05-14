@@ -1,4 +1,4 @@
-package com.behavioral.observer.cricket;
+package com.behavioral.observer.weather;
 
 /**
  * The Subscriber/Observer interface declares the notification interface.

@@ -2,7 +2,7 @@ package com.behavioral.command;
 
 /**
  * The Client creates and configures concrete command objects. 
-   The client must pass all of the request parameters, including a receiver instance, into the command’s constructor. 
+   The client must pass all the request parameters, including a receiver instance, into the command’s constructor.
    After that, the resulting command may be associated with one or multiple senders.
 
    Flow:- 
@@ -13,6 +13,10 @@ package com.behavioral.command;
 public class RemoteControlDevice {
     // Remote Control Device will have multiple buttons (remote button) for each operation.
     // We are trying to make Universal remote which can operate TV, SetTopBox and many more.
+
+    // can make 2 arrays named as onCommands and offCommands
+    // where onCommands will hold tvOnButton, setUpBoxOnButton
+    // and offCommands will hold tvOffButton, setUpBoxOffButton
     private RemoteButton tvOnButton;
     private RemoteButton tvOffButton;
     private RemoteButton setUpBoxOnButton;

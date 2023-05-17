@@ -14,11 +14,15 @@
 - Context encapsulates the usage from the client *(We are using this in our example)*
 ### Why do we need context class? 
 ```
-In second scenario, the client is not aware of when the strategy needs to be called. Only thing the client knows is which strategy is to be used. Context is useful when you have to load some data and do a bunch of other things pre/post the strategy call. As the name suggests, the client does not need to be aware of these functionalites and where the strategy fits among it.
+In second scenario, the client is not aware of when the strategy needs to be called. 
+Only thing the client knows is which strategy is to be used. 
+Context is useful when you have to load some data and do a bunch of other things pre/post the strategy call.
+ As the name suggests, the client does not need to be aware of these functionalites and where the strategy fits among it.
 
 Examples:
 
-Discounts ---- based on time period, festivals. Each of these and buisness logic could be defined as individual classes and dynamically changed as required
+Discounts ---- based on time period, festivals. 
+Each of these and buisness logic could be defined as individual classes and dynamically changed as required
 Maps ----- route calculation via air, bus, train, vehicle.
 ```
 
@@ -55,6 +59,15 @@ Maps ----- route calculation via air, bus, train, vehicle.
 - Java Collections.sort(list, comparator) method where client actually passes suitable comparator based on the requirement in runtime to the method and the method is generic to accept any comparator type. Based on the comparator being passed, same collection can be sorted differently.
 - Appenders, Layouts and Filters in Log4j.
 - Layout Managers in UI toolkits.
+
+## Strategy Vs State Design Pattern
+- The State and Strategy Patterns have the same class diagram, but they differ in intent.
+- This structure may look similar to the Strategy pattern, but there’s one key difference. In the State pattern, the particular **states may be aware of each other** and initiate transitions from one state to another, whereas strategies almost **never know about each other**.
+- First, the strategy pattern defines a family of interchangeable algorithms. Generally, they achieve the same goal, but with a different implementation, for example, sorting or rendering algorithms.
+- In state pattern, the behavior might change completely, based on actual state.
+- Next, in strategy, **the client has to be aware of the possible strategies to use and change them explicitly**. Whereas in state pattern, **each state is linked to another and create the flow as in Finite State Machine**.
+- State encapsulates state-based behavior and delegate behavior to the current state whereas Strategy encapsulates interchangeable behaviors and use delegation to decide which behavior to use.
+- Template Method Subclasses decide how to implement steps in an algorithm.
 
 ## Useful Links
 - [Baeldung blog](https://www.baeldung.com/java-strategy-pattern)

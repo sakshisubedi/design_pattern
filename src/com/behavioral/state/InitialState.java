@@ -20,6 +20,10 @@ public class InitialState implements ILikeDislikeState{
     @Override
     public void like(LikeDislikeContext context) { // doThis()
         context.incrementLikes();
+        /*
+        * The disadvantage of having state transitions in the state classes is that
+        * we create dependencies between the state classes.
+        * */
         context.changeState(new LikedState());
     }
 

@@ -2,7 +2,7 @@
 - Strategy is a **behavioral design pattern** that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 - Strategy is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 - Encapsulates an algorithm inside a class.
-- A Strategy Pattern says that "defines a family of functionality, encapsulate each one, and make them interchangeable". The Strategy Pattern is also known as Policy.
+- A Strategy Pattern says that "defines a family of functionality, encapsulate each one, and make them interchangeable". Strategy lets the algorithm vary independently from clients that use it. The Strategy Pattern is also known as Policy.
 
 ## Intent
 - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.

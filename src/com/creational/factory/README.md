@@ -39,6 +39,10 @@
  - The addition of new classes and interfaces could increase the complexity of the code. The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
  - The different types of objects created must have the same parent class.
 
+## Factory Vs Abstract Factory Design Pattern
+- Factory method relies on inheritance: object creation is delegated to subclasses which implement the factory method to create objects. Whereas, Abstract Factory relies on object composition: object creation is implemented in methods exposed in the factory interface.
+- The intent of factory method is to allow a class to defer instantiation to its subclasses. The intent of abstract factory is to create families of related objects without having to depend on their concrete classes.
+
 ## Useful Links
  - [Stackoverflow example 1](https://stackoverflow.com/questions/2386125/real-world-examples-of-factory-method-pattern#:~:text=5%20Answers&text=A%20class%20implementing%20factory%20design,like%20SQL%20Server%20and%20Oracle.)
  - [Stackoverflow example 2](https://stackoverflow.com/questions/69849/factory-pattern-when-to-use-factory-methods)

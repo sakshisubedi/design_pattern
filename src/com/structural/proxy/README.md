@@ -43,6 +43,11 @@
 ## Proxy Vs Adapter vs Decorator Design Pattern
 - Adapter pattern gives a different interface to its subject, while Proxy patterns provides the same interface from the original object but the decorator provides an enhanced interface. Decorator pattern adds additional behaviour at runtime.
 
+## Important Points
+- Even if we have only one concrete creator it is still advantageous to use Factory Design Pattern because we are decoupling the implementation of the product from its use. If any additional products are added or change a product's implementation, it will not affect the Creator.
+- It is not always necessary to declare factory method and the Creator as abstract. 
+- When we directly instantiate an object, we are depending on the concrete class. Therefore, factroy pattern is a good way to deal with this. 
+
 
 ## Useful Links
 - [Good Example](https://www.scaler.com/topics/design-patterns/proxy-design-pattern/)

@@ -1,5 +1,5 @@
 # Abstract Factory
-- Abstract Factory is a **creational design pattern** that lets you produce families of related objects without specifying their concrete classes.
+- Abstract Factory is a **creational design pattern** that provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 - Abstract Factory is factory of factories. It is considered as another layer of abstraction over factory pattern.
 - It deals with factory creation and Factory deals with objects/instance creation.
 - In absence of abstract factory the client would need to be aware which instances to create. Abstract factory allows to move this logic away from the client side into a separate abstraction layer.

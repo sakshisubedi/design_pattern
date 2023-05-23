@@ -1,6 +1,6 @@
-package com.creational.abstractfactory.product;
+package com.creational.abstractfactory.pizza.product;
 
-import com.creational.abstractfactory.model.Coke;
+import com.creational.abstractfactory.pizza.model.Coke;
 
 public class CarbonatedCoke extends Coke {
     public CarbonatedCoke() {

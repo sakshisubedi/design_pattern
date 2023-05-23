@@ -73,6 +73,7 @@ whereas the base provides expected behavior. Additionally, it is over-method and
 - Do not use it in scenarios where the object factory has widely varying attributes.
 
 ## Useful Links
+- [Scaler Example](https://www.scaler.com/topics/design-patterns/abstract-factory-design-pattern/)
 - [Baeldung blog](https://www.baeldung.com/java-abstract-factory-pattern)
 - [Factory Vs Abstract Factory Pattern](https://www.baeldung.com/java-factory-pattern)
 - [Example 1](https://www.adevguide.com/abstract-factory-design-pattern-java/)

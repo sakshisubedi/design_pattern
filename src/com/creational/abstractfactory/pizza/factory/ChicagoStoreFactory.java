@@ -1,13 +1,13 @@
-package com.creational.abstractfactory.factory;
+package com.creational.abstractfactory.pizza.factory;
 
-import com.creational.abstractfactory.model.Coke;
-import com.creational.abstractfactory.model.CokeType;
-import com.creational.abstractfactory.model.Pizza;
-import com.creational.abstractfactory.model.PizzaType;
-import com.creational.abstractfactory.product.CarbonatedCoke;
-import com.creational.abstractfactory.product.ChicagoStyleCheesePizza;
-import com.creational.abstractfactory.product.ChicagoStyleVeggiePizza;
-import com.creational.abstractfactory.product.SugarFreeCoke;
+import com.creational.abstractfactory.pizza.model.Coke;
+import com.creational.abstractfactory.pizza.model.CokeType;
+import com.creational.abstractfactory.pizza.model.Pizza;
+import com.creational.abstractfactory.pizza.model.PizzaType;
+import com.creational.abstractfactory.pizza.product.CarbonatedCoke;
+import com.creational.abstractfactory.pizza.product.ChicagoStyleCheesePizza;
+import com.creational.abstractfactory.pizza.product.ChicagoStyleVeggiePizza;
+import com.creational.abstractfactory.pizza.product.SugarFreeCoke;
 
 public class ChicagoStoreFactory implements AbstractFactory {
 

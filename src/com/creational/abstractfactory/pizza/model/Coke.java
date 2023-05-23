@@ -1,4 +1,4 @@
-package com.creational.abstractfactory.model;
+package com.creational.abstractfactory.pizza.model;
 
 public class Coke {
     private long id;

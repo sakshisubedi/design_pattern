@@ -1,6 +1,6 @@
-package com.creational.abstractfactory.factory;
+package com.creational.abstractfactory.pizza.factory;
 
-import com.creational.abstractfactory.model.Location;
+import com.creational.abstractfactory.pizza.model.Location;
 
 /**
  * The Abstract Factory interface declares a set of methods for creating each of the abstract products.

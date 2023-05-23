@@ -1,10 +1,10 @@
-package com.creational.abstractfactory.factory;
+package com.creational.abstractfactory.pizza.factory;
 
-import com.creational.abstractfactory.model.Coke;
-import com.creational.abstractfactory.model.CokeType;
-import com.creational.abstractfactory.model.Pizza;
-import com.creational.abstractfactory.model.PizzaType;
-import com.creational.abstractfactory.product.*;
+import com.creational.abstractfactory.pizza.model.Coke;
+import com.creational.abstractfactory.pizza.model.CokeType;
+import com.creational.abstractfactory.pizza.model.Pizza;
+import com.creational.abstractfactory.pizza.model.PizzaType;
+import com.creational.abstractfactory.pizza.product.*;
 
 /**
  * Concrete Factories implement creation methods of the abstract factory. 

@@ -1,10 +1,10 @@
-package com.creational.abstractfactory;
+package com.creational.abstractfactory.pizza;
 
-import com.creational.abstractfactory.factory.AbstractFactory;
-import com.creational.abstractfactory.factory.FactoryProvider;
-import com.creational.abstractfactory.model.CokeType;
-import com.creational.abstractfactory.model.Location;
-import com.creational.abstractfactory.model.PizzaType;
+import com.creational.abstractfactory.pizza.factory.AbstractFactory;
+import com.creational.abstractfactory.pizza.factory.FactoryProvider;
+import com.creational.abstractfactory.pizza.model.CokeType;
+import com.creational.abstractfactory.pizza.model.Location;
+import com.creational.abstractfactory.pizza.model.PizzaType;
 
 public class AbstractFactoryPattern {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package com.creational.abstractfactory.product;
+package com.creational.abstractfactory.pizza.product;
 
-import com.creational.abstractfactory.model.Pizza;
+import com.creational.abstractfactory.pizza.model.Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
     public ChicagoStyleCheesePizza() {

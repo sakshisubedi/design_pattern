@@ -40,6 +40,7 @@
  - The different types of objects created must have the same parent class.
 
 ## Factory Vs Abstract Factory Design Pattern
+- *(For better understanding, refer Pizza example from HFDP book)*
 - Factory method relies on inheritance: object creation is delegated to subclasses which implement the factory method to create objects. Whereas, Abstract Factory relies on object composition: object creation is implemented in methods exposed in the factory interface.
 - The intent of factory method is to allow a class to defer instantiation to its subclasses. The intent of abstract factory is to create families of related objects without having to depend on their concrete classes.
 

@@ -6,7 +6,7 @@
 ## Intent
  - Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
  - Defining a "virtual" constructor.
- - The new operator considered harmful.
+ - The *new* operator considered harmful. When you use *new* you are certainly instantiating a concrete class, so that's definitely an implementation, not an interface. Tying the code to a concrete class make the code more fragile and less flexible and the code will not be "closed for modification".
 
 ## When to use:
  - There should be a set of classes which implement a common interface.

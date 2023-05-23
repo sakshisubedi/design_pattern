@@ -48,6 +48,7 @@ whereas the base provides expected behavior. Additionally, it is over-method and
 
 ## Pros
 - You can be sure that the products you’re getting from a factory are compatible with each other.
+- Good for abstraction and family of similar objects.  
 - You avoid tight coupling between concrete products and client code. It provides an approach to code for interface rather than implementation. It isolates the client code from concrete (implementation) classes.
 - Single Responsibility Principle. You can extract the product creation code into one place, making the code easier to support.
 - Open/Closed Principle. You can introduce new variants of products without breaking existing client code.
@@ -61,6 +62,7 @@ whereas the base provides expected behavior. Additionally, it is over-method and
 - Easier development process due to abstraction at object creation layer.
 
 ## Cons
+- Pattern inside pattern.
 - The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.
 - This is a lot more complex to implement than the factory method.
 - If a product needs to implement new functionality, all concrete products will require to make the change.

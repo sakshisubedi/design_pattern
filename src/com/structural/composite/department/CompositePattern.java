@@ -1,7 +1,8 @@
 package com.structural.composite.department;
 
 /**
- * The Client works with all elements through the component interface. As a result, the client can work in the same way with both simple or complex elements of the tree.
+ * The Client works with all elements through the component interface.
+ * As a result, the client can work in the same way with both simple or complex elements of the tree.
  * It has access to the composition elements by using the base component (common interface) object.
  */
 public class CompositePattern {

@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The Container (aka composite) is an element that has sub-elements: leaves or other containers. A container doesn’t know the concrete classes of its children. It works with all sub-elements only via the component interface.
+ * The Container (aka composite) is an element that has sub-elements: leaves or other containers.
+ * A container doesn’t know the concrete classes of its children.
+ * It works with all sub-elements only via the component interface.
  *
- * Upon receiving a request, a container delegates the work to its sub-elements, processes intermediate results and then returns the final result to the client.
+ * Upon receiving a request, a container delegates the work to its sub-elements,
+ * processes intermediate results and then returns the final result to the client.
  *
  * It has leaf elements. It implements the base component methods and defines the child-related operations.
  */

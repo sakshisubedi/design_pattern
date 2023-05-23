@@ -12,16 +12,13 @@
 
 ## Does abstract factory violate Open/Closed principle?
 ```
-- As per this principle, the class should be open for
- extension and closed for modification.
-- As per our example if we want to setup a new store,
- we will create new class/factory but will need to 
- modify the switch case in our FactoryProvider. 
-- Some might argue that this is violation of the 
-principle but we are not modifying existing code we are
- only adding new case. So it is a minor violation.
-- Our aim with design principles should be to minimize
- the number of changes required for extension.
+- As per this principle, the class should be open for extension and closed for modification.
+- As per our example if we want to setup a new store, we will create new class/factory 
+but will need to modify the switch case in our FactoryProvider. 
+- Some might argue that this is violation of the principle but we are not modifying existing code we are
+ only adding new case. 
+ So it is a minor violation.
+- Our aim with design principles should be to minimize the number of changes required for extension.
 ```
 
 ### Factory Method vs. Abstract Factory

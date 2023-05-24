@@ -1,4 +1,4 @@
-# Template
+# Template Method
 - Template is a **behavioral design pattern** that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 - Template means Preset format like HTML templates which has fixed preset format. Similarly in template method pattern,we have a preset structure method called template method which consists of steps.This steps can be abstract method which will be implemented by its subclasses.
 - Most of the time, subclasses calls methods from super class but in template pattern, superclass template method calls methods from subclasses, this is known as Hollywood Principle - **don’t call us, we’ll call you.**

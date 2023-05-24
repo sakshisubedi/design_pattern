@@ -45,7 +45,7 @@
   - [Facade](./src/com/structural/facade)
   - [Composite](./src/com/structural/composite)
   - [Flyweight](./src/com/structural/flyweight)
-  - Proxy
+  - [Proxy](./src/com/structural/proxy)
 
 ### Behavioral Patterns
 - Any pattern that is a Behavioral Pattern is concerned with how classes and objects interact and distribute responsibility.
@@ -53,19 +53,19 @@
 - Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
 - Behavioral design patterns are concerned with the interaction and responsibility of objects. In these design patterns, the interaction between the objects should be in such a way that they can easily talk to each other and still should be loosely coupled. That means the implementation and the client should be loosely coupled in order to avoid hard coding and dependencies.
 - Class
-  - Template Method
+  - [Template Method](./src/com/behavioral/templatemethod)
   - Interpreter
 - Object
   - [State](./src/com/behavioral/state)
   - [Observer](./src/com/behavioral/observer)
   - [Command](./src/com/behavioral/command)
   - [Strategy](./src/com/behavioral/strategy)
-  - Chain of Responsibility
-  - Command
-  - Iterator
-  - Mediator
-  - Memento
-  - Visitor
+  - [Chain of Responsibility](./src/com/behavioral/chainofresponsibility)
+  - [Command](./src/com/behavioral/command)
+  - [Iterator](./src/com/behavioral/iterator)
+  - [Mediator](./src/com/behavioral/mediator)
+  - [Memento](./src/com/behavioral/memento)
+  - [Visitor](./src/com/behavioral/visitor)
 
 ### Useful Links
 - [Baeldung Github](https://github.com/eugenp/tutorials/tree/master)

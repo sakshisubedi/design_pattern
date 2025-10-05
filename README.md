@@ -31,8 +31,7 @@
   - [Singleton](./src/com/creational/singleton)
  
 ### Structural Patterns
-- Structural patterns let you compose classes or objects
-  into larger structures while keeping these structures flexible and efficient.
+- Structural patterns let you compose classes or objects into larger structures while keeping these structures flexible and efficient. These patterns help ensure that if one part of a system changes, the entire system doesn't need to change as well, promoting flexibility and reusability.
 - It is all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality. 
 - It eases the design by identifying a simple way to realize relationships between entities.
 - They are concerned with how classes and objects can be composed, to form larger structures. The structural design patterns simplifies the structure by identifying the relationships. These patterns focus on, how the classes inherit from each other and how they are composed from other classes.

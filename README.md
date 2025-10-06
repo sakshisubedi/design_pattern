@@ -47,7 +47,7 @@
   - [Proxy](./src/com/structural/proxy)
 
 ### Behavioral Patterns
-- Any pattern that is a Behavioral Pattern is concerned with how classes and objects interact and distribute responsibility.
+- Any pattern that is a Behavioral Pattern is concerned with how classes and objects interact and distribute responsibility. Their goal is to improve communication between objects, make responsibilities clear, and make the system more flexible and extensible.
 - In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 - Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
 - Behavioral design patterns are concerned with the interaction and responsibility of objects. In these design patterns, the interaction between the objects should be in such a way that they can easily talk to each other and still should be loosely coupled. That means the implementation and the client should be loosely coupled in order to avoid hard coding and dependencies.

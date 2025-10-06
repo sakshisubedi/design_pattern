@@ -2,7 +2,8 @@ package com.structural.flyweight.counterStrike;
 
 /**
  * The Flyweight class contains the portion of the original object’s state that can be shared between multiple objects. 
- The same flyweight object can be used in many contexts. The state stored inside a flyweight is called intrinsic. The state passed to the flyweight’s methods is called extrinsic.
+ The same flyweight object can be used in many contexts. The state stored inside a flyweight is called intrinsic. 
+ The state passed to the flyweight’s methods is called extrinsic.
  */
 // Terrorist must have weapon and mission
 public class Terrorist implements Player {

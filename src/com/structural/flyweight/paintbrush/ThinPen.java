@@ -5,7 +5,7 @@ public class ThinPen implements Pen {
     private String color; //extrinsic state - supplied by client
 
     public ThinPen() {
-        brushSize = BrushSize.MEDIUM;
+        brushSize = BrushSize.THIN;
         color = null;
     }
 

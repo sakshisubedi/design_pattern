@@ -5,7 +5,7 @@ public class ThickPen implements Pen{
     private String color; //extrinsic state - supplied by client
 
     public ThickPen() {
-        brushSize = BrushSize.MEDIUM;
+        brushSize = BrushSize.THICK;
         color = null;
     }
 
